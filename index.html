@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="HENRY's currency converter app">
+    <meta name="author" content="HENRY KAMYA">
+	<link type="text/javascript" href="bootstrap/js/bootstrap.min.js">
+	<link type="text/javascript" href="bootstrap/js/bootstrap.js">
+	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link type="text/css" href="bootstrap/css/font-awesome.css" rel="stylesheet">
+	<script type="text/javascript" src="js/index.js"></script>
+	<title>HENRY_DOLAR_RATES</title>
+</head>
+<body>
+	<div id="app_header" class="col-sm-4">
+		<h2>This Is Henry's Currency Converter!</h2>
+		<h3>It gives current updates of the US-DOLAR RATES<h3>
+	</div>
+	<hr>
+	<div id='app_body'>
+		<input type='hidden' class="form-control" />
+		<div id="currency_value" style="text-align:centre;">
+			<span id="current_rate" ></span>
+		</div>
+		<hr>
+		<button class="btn btn-success" onclick="currency_query()">UPDATE</button>
+	</div>
+</body>
+</html>
