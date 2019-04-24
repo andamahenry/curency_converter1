@@ -9,10 +9,10 @@ function currency_query(){
 		if(this.status==200 || this.readyState==4){
 			var server_response = this.responseText;
 			var data = JSON.parse(server_response);
-			for(var item in data){
-				console.log(item+"==>"+data[item]);
-				display_span.innerHTML = item+"==>"+data[item];
-			}
+			//for(var item in data){
+				console.log("USD_UGX"+"==>"+data['USD_UGX']);
+				display_span.innerHTML = "USD_UGX"+"==>"+data["USD_UGX"];
+			//}
 		}else{
 			alert(this.status+"==>"+this.responseText);
 		}
