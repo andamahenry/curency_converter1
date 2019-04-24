@@ -4,8 +4,8 @@ function currency_query(){
 	var req = new XMLHttpRequest();
 	req.open('POST','http://jerm.000webhostapp.com',true);
 	
-	//req.onreadystatechange = function (){
-	req.onload = function (){
+	//req.onload = function (){
+	req.onreadystatechange = function (){
 		alert('Lindirira!');
 		if(this.status==200 || this.readyState==4){
 			var server_response = this.responseText;
