@@ -6,11 +6,11 @@ function currency_query(){
 	
 	//req.onreadystatechange = function (){
 	req.onload = function (){
+		alert('Lindirira!');
 		if(this.status==200 || this.readyState==4){
 			var server_response = this.responseText;
 			var data = JSON.parse(server_response);
 			//for(var item in data){
-			alert('Lindirira!');
 			console.log("USD_UGX"+"==>"+data['USD_UGX']);
 			display_span.innerHTML = "USD_UGX"+"==>"+data["USD_UGX"];
 			//}
