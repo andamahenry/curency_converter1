@@ -2,7 +2,7 @@ function currency_query(){
 	var display_span = document.getElementById("current_rate");
 	display_span.innerHTML = 'Waiting for server response, now...';
 	var req = new XMLHttpRequest();
-	req.open('POST','http://jerm.000webhostapp.com',true);
+	req.open('POST','https://jerm.000webhostapp.com',true);
 	
 	//req.onload = function (){
 	req.onreadystatechange = function (){
