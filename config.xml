@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.henry.json1"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>Dolar_Rate1</name>
+
+  <description>
+     Gives Current Dollar Rate
+  </description>
+
+  <author href="https://jermtechnology.com" email="andamahenry1@gmail.com">
+      Henry Andama
+  </author>
+    
+  <icon src="me.png" width="29" height="29"/>
+
+</widget>
