@@ -29,6 +29,9 @@
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
 
+
+    <!-- this plugin allows the whitelisted protocols above to work -->
+    <plugin name="cordova-plugin-whitelist" />
     
   <icon src="icon.png" width="29" height="29"/>
 
