@@ -1,6 +1,6 @@
 var URLs={
     rate:{
-        mtd: 'POST', url:'https://jerm.000webhostapp.com',
+        mtd: 'POST', url:'http://jerm.000webhostapp.com',
 },};
 
 var DISPLAY_SPAN;
@@ -16,13 +16,11 @@ function currency_query(){
                 var data = JSON.parse(this.responseText);
                 console.log("USD_UGX"+"==>"+data['USD_UGX']);
                 DISPLAY_SPAN.innerHTML = "USD_UGX"+"==>"+data["USD_UGX"];
-                alert('Lindirira!');
             }else if(!this.status){
                 DISPLAY_SPAN.innerHTML = "URL ["+URLs.rate.url+"] does not exist";
             }
             else{
                 DISPLAY_SPAN.innerHTML = "ERROR: "+this.status+"<br>"+"URL:"+this.responseURL;
-                alert(this.status+"==>"+this.responseText);
             }
         }
 	}
