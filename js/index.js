@@ -1,7 +1,7 @@
 var URLs={
-    rate:{
-        mtd: 'POST', url:'http://jerm.000webhostapp.com',
-},};
+    rate:{mtd: 'POST', url:'http://jerm.000webhostapp.com',},
+    rtu:{mtd:'GET', url:'http://45.33.74.38:8890/get_config',},
+};
 
 var DISPLAY_SPAN;
 
@@ -29,6 +29,23 @@ function currency_query(){
 	req.send(payload);
 }
 
+function get_config(){ // this is to test if all urls are broken
+	var req = new XMLHttpRequest();
+	req.open(URLs.rtu.mtd,URLs.rtu.url,true);
+	
+	req.onreadystatechange = function (){
+        if(this.readyState == 4){
+            if(this.status===200){alert("test-config link is Ok. problem is probably on the currency server");
+            }else if(!this.status){alert("URL ["+URLs.rate.url+"] does not exist");
+            }else{alert("failed to fetch config. this is strange");}
+        }
+	}
+	var payload = new FormData();
+	req.send(payload);
+}
+
 window.onload = function(){
     DISPLAY_SPAN = document.getElementById("current_rate");
+    get_config();
+
 }
