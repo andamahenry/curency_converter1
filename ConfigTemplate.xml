@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<widget id="org.jerm.[[PROJECT-SHORT-NAME]]" version="[[X.Y.Z]]" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>[[PROJECT-NAME]]</name>
+    <description>[[PROJECT-DESCRIPTION]]</description>
+
+    <author email="[[EMAIL]]" href="[[WEBSITE]]">[[YOUR NAMES]]</author>
+
+    <!-- am assuming your index file will always be index.html -->
+    <content src="index.html" />
+
+    <preference name="DisallowOverscroll" value="true" />
+    
+    <!-- this allows earlier versions of android to be suported -->
+    <preference name="android-minSdkVersion" value="14"/>
+
+    <!-- without this, the keyboard will distort the window when a user wants to type eg in an input -->
+    <preference name="android-windowSoftInputMode" value="adjustPan" />
+    
+
+    <!-- allow all possible communication protocols -->
+    <allow-navigation href="*" />
+    <access origin="*" />
+
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+
+
+    <icon src="data/JMS.png" gap:role="default" />
+
+    <!-- always include this to support the communication protocols listed above -->
+    <plugin name="cordova-plugin-whitelist" />
+
+    <!-- plugins to add custom permisions. DONT INCLUDE PLUGINS YOU WONT USE -->
+    <!-- note that each plugin has its own documentation of how to use it -->
+    <!--
+        <plugin name="cordova-plugin-camera" />
+        <plugin name="cordova-plugin-geolocation" />
+        <plugin name="cordova-plugin-vibration" />
+        <plugin name="cordova-plugin-sqlite" />
+        <plugin name="cordova-plugin-device" />
+        <plugin name="cordova-plugin-geolocation" version="2.1.0" />
+        <plugin name="cordova-plugin-x-toast" />
+        <plugin name="cordova-plugin-fastrde-checkgps" spec="https://github.com/fastrde/cordova-plugin-fastrde-checkgps" />
+        <plugin name="phonegap-plugin-barcodescanner" spec="https://github.com/jrontend/phonegap-plugin-barcodescanner" />
+        <plugin name="cordova-plugin-blutooth-printer" spec="https://github.com/srehanuddin/Cordova-Plugin-Bluetooth-Printer" />
+    -->
+
+</widget>
+
