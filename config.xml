@@ -16,6 +16,22 @@
   <author href="https://jermtechnology.com" email="andamahenry1@gmail.com">
       Henry Andama
   </author>
+
+    <!-- you hadnt added this to your config boss s the app was not allowed to communicate -->
+    <allow-navigation href="*" />
+    <access origin="*" />
+
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+
+
+    <!-- this plugin allows the whitelisted protocols above to work -->
+    <plugin name="cordova-plugin-whitelist" />
     
   <icon src="icon.png" width="29" height="29"/>
 
