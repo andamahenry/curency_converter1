@@ -12,7 +12,7 @@ function currency_query(){
 			for(var item in data){
 			console.log("USD_UGX"+"==>"+data['USD_UGX']);
 			display_span.innerHTML = "USD_UGX"+"==>"+data["USD_UGX"];
-			alert('Lindirira!');
+			//alert('Lindirira!');
 			}
 		}else{
 			alert(this.status+"==>"+this.responseText);
